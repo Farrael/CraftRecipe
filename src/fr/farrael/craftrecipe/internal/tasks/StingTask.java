@@ -39,8 +39,10 @@ public class StingTask implements Runnable {
      * Stop the task
      */
     public static void stop() {
-        if(task != null)
+        if(task != null) {
             task.cancel();
+            task = null;
+        }
     }
 
     /**
