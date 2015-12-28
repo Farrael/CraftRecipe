@@ -1,0 +1,17 @@
+name: CraftRecipe
+main: fr.farrael.craftrecipe.CraftRecipe
+version: 1.0.0
+description: Create new crafting recipes.
+depend: [ProtocolLib, Rootlib]
+commands:
+    craftrecipe:
+        description: Default plugin commands.
+        aliases: cr
+permissions:
+    CraftRecipe.*:
+        description: Gives access to all commands.
+        children:
+            CraftRecipe.admin: true
+    CraftRecipe.admin:
+        description: Allows you to edit plugin.
+        default: op
